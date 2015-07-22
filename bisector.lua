@@ -95,7 +95,7 @@ function bisector(model, a, b, c, d)
      local bis = angle_bisector(b-a, d-c) 
      local start, stop = calculate_start_stop(a,b,c,d,intersect,bis)
       
-     return create_line_segment(model, start, stop )
+     return create_line_segment(model, intersect, start )
   end
 end
 
